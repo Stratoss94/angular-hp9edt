@@ -1,0 +1,8 @@
+<p>Todo List:</p>
+<ul>
+  <li *ngFor="let todo of todos">
+    <div [ngClass]="{ 'line-over-text': todo.done == true }">
+      {{ todo.label }} : {{ todo.done }}
+    </div>
+  </li>
+</ul>
